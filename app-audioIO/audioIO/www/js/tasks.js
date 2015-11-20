@@ -25,6 +25,12 @@ var _tasks = {
 
       my_media.play();
 
+    },
+    initDone: function (pageId, pageContent, event, dom) {
+
+      localStorage.setItem("init", "true");
+      return true;
+
     }
 };
 

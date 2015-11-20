@@ -19,9 +19,23 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
 
+
+      //localStorage.setItem("lastname", "dhjksfghjlasdgfjkaghsdjkfgajk");
+
+      var init = localStorage.getItem("init");
+      var _start;
+
+      if (init == 'true') {
+        // main start
+        _start = 'home';
+      } else {
+        // prelog
+        _start = 'index';
+      }
+
       var myPager = new cPager({
         container: 'page',
-        start: 'home',
+        start: _start,
         handler: 'pageBtn',
 		    tmplPath: 'tmpl',
         tasks: _tasks,
