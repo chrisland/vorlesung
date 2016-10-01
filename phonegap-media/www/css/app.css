@@ -1,0 +1,108 @@
+/* !Windows Phone 8 */
+@-ms-viewport {
+  width: 100%;
+  height: device-height;
+}
+
+@viewport {
+  width: 100%;
+  height: device-height;
+}
+
+
+/* Font */
+@font-face {
+  font-family: openregular;
+  src: url('font/opensans-regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: openlight;
+  src: url('font/opensans-light-webfont.ttf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    /* Recommended for Windows 8 Phone */
+    /* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+    -ms-touch-action: pan-x ;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+}
+
+body {
+    -webkit-touch-callout: none ;
+    -webkit-text-size-adjust: none ; -ms-text-size-adjust: none ;
+    -webkit-user-select: none ; -moz-user-select: none ; -ms-user-select: none ; user-select: none ;
+    -webkit-highlight: none ;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) ;
+    -webkit-tap-highlight-color: transparent ;      /* For some Androids */
+
+    /* Recommended for Windows 8 Phone */
+    /* SOURCE: http://www.excellentwebworld.com/common-problems-solution-for-windows-phone-8-phonegap */
+    -ms-touch-action: pan-y ;
+    -ms-content-zooming: none ;
+
+    -ms-overflow-style: none !important;
+    -ms-scroll-translation: vertical-to-horizontal;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+
+    font-family: openregular;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+input, textarea  {
+    /* allow copy-paste */
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+button {
+  width: 100%;
+  text-align: left;
+
+  border: none;
+  outline: none;
+
+  font-family: openregular;
+  background-color: #f2f2f2;
+  font-size: 100%;
+
+  border: 1px solid #ccc;
+}
+
+p {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.scrollable-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.scrollable-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}

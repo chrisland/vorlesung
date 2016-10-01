@@ -1,0 +1,76 @@
+
+#page,
+#pageTemp {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.w-1 { flex: 1; }
+.w-2 { flex: 2; }
+.w-3 { flex: 3; }
+.w-4 { flex: 4; }
+.w-5 { flex: 5; }
+.w-6 { flex: 6; }
+.w-7 { flex: 7; }
+.w-8 { flex: 8; }
+
+
+.h-1 {
+  height: 6.25vh;
+}
+.h-2 {
+  height: calc(6.25vh *2);
+}
+.h-3 {
+  height: calc(6.25vh *3);
+}
+.h-4 {
+  height: calc(6.25vh *4);
+}
+.h-5 {
+  height: calc(6.25vh *5);
+}
+.h-6 {
+  height: calc(6.25vh *6);
+}
+.h-7 {
+  height: calc(6.25vh *7);
+}
+.h-8 {
+  height: calc(6.25vh *8);
+}
+.h-9 {
+  height: calc(6.25vh *9);
+}
+.h-10 {
+  height: calc(6.25vh *10);
+}
+.h-11 {
+  height: calc(6.25vh *11);
+}
+.h-12 {
+  height: calc(6.25vh *12);
+}
+.h-13 {
+  height: calc(6.25vh *13);
+}
+.h-14 {
+  height: calc(6.25vh *14);
+}
+.h-15 {
+  height: calc(6.25vh *15);
+}
+.h-16 {
+  height: calc(6.25vh *16);
+}
