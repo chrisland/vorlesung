@@ -37,7 +37,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
- 
+
         app.events();
 
     },
@@ -53,10 +53,10 @@ var app = {
             if (!selector) {
                 selector = '#app'
             }
-            
+
             var rand = Math.floor(Date.now() / 1000);
 
-            alert( selector+ ' - content/'+load+'.html?_='+rand  );
+            //alert( selector+ ' - content/'+load+'.html?_='+rand  );
 
             jQuery(selector).load('content/'+load+'.html?_='+rand  );
 
